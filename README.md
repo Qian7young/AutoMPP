@@ -10,7 +10,7 @@ AutoMPP is a dedicated tool for molecular property prediction, built with AutoGl
 - RDKit
 
 
-$$
+
 
 **1. Create a new conda environment**
 conda create -n AutoMPP python=3.9
