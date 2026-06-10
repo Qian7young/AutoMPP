@@ -23,4 +23,3 @@ pip3 install autogluon==1.1.1
 
 pip3 install rdkit
 
-$$
