@@ -8,15 +8,15 @@ Automated tool for molecular property prediction
 
 **1. Create a new conda environment**
 
-conda create -n AutoMPP python=3.9
+        conda create -n AutoMPP python=3.9
 
 **2. Activate the environment**
 
-conda activate AutoMPP
+        conda activate AutoMPP
 
 **3. Install core dependencies**
 
-pip3 install autogluon==1.1.1
+        pip3 install autogluon==1.1.1
 
-pip3 install rdkit
+        pip3 install rdkit
 
