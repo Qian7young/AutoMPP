@@ -1,4 +1,3 @@
-```markdown
 # AutoMPP
 Automated tool for molecular property prediction (自动化分子性质预测工具)
 
@@ -13,7 +12,7 @@ AutoMPP is a dedicated tool for molecular property prediction, built with AutoGl
 ## Quick Installation
 We use **Conda** to manage the environment for stability. Execute the following commands in sequence:
 
-```bash
+
 # 1. Create a new conda environment
 conda create -n AutoMPP python=3.9
 
