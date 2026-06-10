@@ -9,17 +9,18 @@ AutoMPP is a dedicated tool for molecular property prediction, built with AutoGl
 - AutoGluon == 1.1.1
 - RDKit
 
-## Quick Installation
-We use **Conda** to manage the environment for stability. Execute the following commands in sequence:
 
+$$
 
-#### 1. Create a new conda environment
+**1. Create a new conda environment**
 conda create -n AutoMPP python=3.9
 
-#### 2. Activate the environment
+**2. Activate the environment**
 conda activate AutoMPP
 
-#### 3. Install core dependencies
+**3. Install core dependencies**
 pip3 install autogluon==1.1.1
 
 pip3 install rdkit
+
+$$
