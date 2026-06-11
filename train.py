@@ -85,7 +85,7 @@ def train_model(train_data, test_data, eval_metric, problem_type, task_name, exp
     train_ag = TabularDataset(train_ag)
     test_ag = TabularDataset(test_ag)
 
-    save_path = os.path.join(f"../model/model-{experiment_type}", f"{task_name}_{'_'.join(fp_names)}")
+    save_path = os.path.join(f"./model/model-{experiment_type}", f"{task_name}_{'_'.join(fp_names)}")
     os.makedirs(save_path, exist_ok=True)
     print(save_path)
 
@@ -128,7 +128,7 @@ def train_model(train_data, test_data, eval_metric, problem_type, task_name, exp
         metrics = for_regression(task_name, best_model, problem_type, test_y, y_pred, best_val_score)
 
     
-    pred_save_dir = f"../metrics/metrics_{experiment_type}"
+    pred_save_dir = f"./metrics/metrics_{experiment_type}"
     os.makedirs(pred_save_dir, exist_ok=True)
     pred_save_path = os.path.join(pred_save_dir, f"{task_name}_predictions_{experiment_type}.csv")
     pred_df.to_csv(pred_save_path, index=False)
@@ -191,8 +191,8 @@ def for_regression(task_name, model_name, problem_type, y_test, y_pred, best_sco
 def main():
     TASK_NAME = sys.argv[1]    # task_name
     experiment_type = "best"    # experiment type (e.g. only model / bagging / stacking / all)
-    TRAIN_CSV = f"../scaffold_split_results/{TASK_NAME}_train.csv"
-    TEST_CSV = f"../scaffold_split_results/{TASK_NAME}_test.csv"
+    TRAIN_CSV = f"./data/{TASK_NAME}_train.csv"
+    TEST_CSV = f"./data/{TASK_NAME}_test.csv"
 
     train_df = TabularDataset(TRAIN_CSV)
     test_df = TabularDataset(TEST_CSV)
@@ -213,8 +213,8 @@ def main():
     )
 
     result_df = pd.DataFrame([metrics])
-    result_df.to_csv(f"../metrics/metrics_{experiment_type}/{TASK_NAME}_results_{experiment_type}.csv", index=False)
-    print(f"../metrics/metrics_{experiment_type}/{TASK_NAME}_results_{experiment_type}.csv")
+    result_df.to_csv(f"./metrics/metrics_{experiment_type}/{TASK_NAME}_results_{experiment_type}.csv", index=False)
+    print(f"./metrics/metrics_{experiment_type}/{TASK_NAME}_results_{experiment_type}.csv")
     print("training completed!")
 
 if __name__ == "__main__":
