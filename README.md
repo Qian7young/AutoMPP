@@ -6,15 +6,15 @@ Automated tool for molecular property prediction
 - AutoGluon == 1.1.1
 - RDKit
 
-**1. Create a new conda environment**
+**1. Create a new conda environment.**
 
         conda create -n AutoMPP python=3.9
 
-**2. Activate the environment**
+**2. Activate the environment.**
 
         conda activate AutoMPP
 
-**3. Install core dependencies**
+**3. Install core dependencies.**
 
         pip3 install autogluon==1.1.1
 
@@ -22,5 +22,7 @@ Automated tool for molecular property prediction
 
 ## Training
 
-**1. Split the data into training and test sets
+**1. Divide the molecular property data in the data folder into training sets and test sets.**
+
+**2. train the model.**
         python train.py task_name
