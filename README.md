@@ -1,6 +1,9 @@
 # AutoMPP
 Automated tool for molecular property prediction
 
+<img width="1956" height="1108" alt="image" src="https://github.com/user-attachments/assets/97d26616-a3ab-4754-91ae-cb33e7daea27" />
+
+
 ## Environment Requirements
 - Python == 3.9
 - AutoGluon == 1.1.1
