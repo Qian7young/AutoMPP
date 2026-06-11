@@ -20,5 +20,7 @@ Automated tool for molecular property prediction
 
         pip3 install rdkit
 
-# training
+## Training
+
+**1. Split the data into training and test sets
         python train.py task_name
