@@ -25,4 +25,5 @@ Automated tool for molecular property prediction
 **1. Divide the molecular property data in the data folder into training sets and test sets.**
 
 **2. train the model.**
+
         python train.py task_name
